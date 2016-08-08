@@ -1,0 +1,12 @@
+<h1>Welcome to the longuest word</h1>
+
+
+<%= @play %>
+
+<form action="/score">
+  <label for="question">Let's play!</label>
+  <input type="text" id="question" name="query" placeholder="Hello">
+  <input type="hidden" value="<%= @time %>" name="submit_time">
+  <input type="hidden" value="<%= @play %>" name="grid.join">
+  <input type="submit" value="Go on!">
+</form>
